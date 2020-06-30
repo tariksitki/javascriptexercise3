@@ -172,6 +172,70 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
 
 
 
+      // Exercıse 90     
+
+
+
+
+
+      function Kth_greatest_in_array(arr, k) {
+
+        for (var i = 0; i < k; i++) {
+          var max_index = i,
+            tmp = arr[i];
+      
+          for (var j = i + 1; j < arr.length; j++) {
+            if (arr[j] > arr[max_index]) {
+              max_index = j;
+            }
+          }
+      
+          arr[i] = arr[max_index];
+          arr[max_index] = tmp;
+        }
+      
+        return arr[k - 1];
+      }
+      
+      console.log(Kth_greatest_in_array([1,2,6,4,5], 3))
+      console.log(Kth_greatest_in_array([-10,-25,-47,-36,0], 1))
+
+
+
+
+
+
+
+      // Exercise 91   
+
+
+
+
+
+
+      function array_max_consecutive_sum(nums, k) {
+        let result = 0;
+        let temp_sum = 0;
+        for (var i = 0; i < k - 1; i++) {
+          temp_sum += nums[i];
+        }
+        for (var i = k - 1; i < nums.length; i++) {
+          temp_sum += nums[i];
+          if (temp_sum > result) {
+            result = temp_sum;
+          }
+          temp_sum -= nums[i - k + 1];
+        }
+        return result;
+      }
+      
+      console.log(array_max_consecutive_sum([1, 2, 3, 14, 5], 2))
+      console.log(array_max_consecutive_sum([2, 3, 5, 1, 6], 3))
+      console.log(array_max_consecutive_sum([9, 3, 5, 1, 7], 2))
+
+
+
+
 
 
 
