@@ -337,6 +337,41 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
           num = [1, 2, 3, 2, 2, 8, 1, 9];
           console.log("Original Array: "+num);
           console.log(array_element_replace(num, 2, 5));
+
+
+
+
+
+
+          //  Exercise 96  Compute the sum of absolute difference of consecutive numbers of a given array of integers
+
+          //   Verilen dizedeki sayilarin farklarini toplamak
+
+
+
+
+
+            function sum_adjacent_difference(arr) {
+
+              var result = 0;
+
+              for( var i = 1; i < arr.length; i++) { 
+
+                result += Math.abs(arr[i] - arr[i - 1]);
+              }
+              
+                  return result ;
+            }
+
+              console.log(sum_adjacent_difference([1,2,3,2,-5]));
+
+
+
+
+
+              
+
+              
           
           
           
