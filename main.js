@@ -535,13 +535,24 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
                         console.log(sort_prime(11));
 
                         console.log(sort_prime(19));
+
+
+
+
+
+                        // Exercise 111  Check a number from three given numbers where two numbers are equal, find the third one
+
+                        // Verilen sayilardan esit olanlari bul ve o sayilara esit olmayan sayiyi consolda göster
+                        
+                        
+                        
                         
                         
                         
 
 
 
-
+              
 
 
 
