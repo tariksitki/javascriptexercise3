@@ -461,7 +461,7 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
 
 
 
-          // Exercise 101   Find the number of inversions od a specified array of integers
+          // Exercise 102  Find the number of inversions od a specified array of integers
 
           //   Verilen array in dönüsüm sayisini bulmak
 
@@ -495,7 +495,57 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
 
 
 
-                    
+
+                    // Exercise 103       Sort an array of all prime numbers between 1 and a given integer
+
+                    //   Verilen bir sayiya kadar bulunan asal sayilari gösterme( Mesela 19 verildi 2,3,5,7,11........)
+
+
+                    function sort_prime(num) {
+
+                      var prime_num1 = [];
+
+                          prime_num2 = [];
+
+                      for ( var i = 0; i <= num; i++) {
+
+                        prime_num2.push(true);
+                      }
+
+                      for (var i = 2; i<=num; i++){
+
+                        if (prime_num2[i]) {
+
+                          prime_num1.push(i);s
+
+                            for ( var j =1; i * j <=num; j++) {
+
+                            prime_num2[i * j] = false;
+                          }
+                        }
+                      }
+                      
+
+                            return prime_num1;
+                    }
+
+
+                        console.log(sort_prime(5));
+
+                        console.log(sort_prime(11));
+
+                        console.log(sort_prime(19));
+                        
+                        
+                        
+
+
+
+
+
+
+
+
 
 
                     
