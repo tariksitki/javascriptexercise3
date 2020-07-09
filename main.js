@@ -558,8 +558,30 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
                       console.log(trailing_zeros_factorial(8))
                       console.log(trailing_zeros_factorial(9))
                       console.log(trailing_zeros_factorial(10))
+
+
+
+
+
+                      // Exercise 113  
                         
-                        
+                      function int_sum(num) {
+                        var s_sum = 0;
+                        while (num > 0) {
+                            s_sum += num;
+                            num = Math.floor(num / 2);
+                        }
+                        return s_sum;
+                    }
+                    console.log(int_sum(8))
+                    console.log(int_sum(9))
+                    console.log(int_sum(26))
+
+
+
+
+
+                    
                         
 
 
