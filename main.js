@@ -540,12 +540,24 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
 
 
 
-                        // Exercise 111  Check a number from three given numbers where two numbers are equal, find the third one
-
-                        // Verilen sayilardan esit olanlari bul ve o sayilara esit olmayan sayiyi consolda göster
+                        // Exercise 112  
                         
                         
-                        
+                        function trailing_zeros_factorial(n) {
+                          var result = 0;
+                          for (var i = 5; i <= n; i += 5) {
+                              var num = i;
+                              while (num % 5 === 0) {
+                                  num /= 5;
+                                  result++;
+                              }
+                          }
+                          return result;
+                      }
+                      
+                      console.log(trailing_zeros_factorial(8))
+                      console.log(trailing_zeros_factorial(9))
+                      console.log(trailing_zeros_factorial(10))
                         
                         
                         
