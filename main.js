@@ -516,7 +516,7 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
 
                         if (prime_num2[i]) {
 
-                          prime_num1.push(i);s
+                          prime_num1.push(i);
 
                             for ( var j =1; i * j <=num; j++) {
 
@@ -615,6 +615,49 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
                   console.log(is_diagonal_matrix([[1, 0, 0], [0, 2, 3], [0, 0, 3] ]));
 
                   
+
+
+
+
+
+
+                  // Exercise 116
+
+                  // Check whether a given integer has an increasing digits sequence.
+
+                  // verilen bir tamsayinin artan basamak dizisine sahip olup olmadigini kontrol edin
+
+
+                  function is_increasing_digits_Sequence(num) {
+
+                    var arr_num = ('' + num).split('');
+
+                    for (var i = 0; i<arr_num.length - 1; i++) {
+
+                      if (parseInt(arr_num[i]) >= parseInt(arr_num[i+1]))
+
+                      return false;
+                    }
+                    
+                  }
+
+                      console.log(is_increasing_digits_Sequence(123));
+
+                      console.log(is_increasing_digits_Sequence(1223));
+
+                      console.log(is_increasing_digits_Sequence(45677));
+
+
+
+
+                      
+
+
+
+
+
+
+
 
 
                         
