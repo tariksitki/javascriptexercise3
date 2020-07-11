@@ -621,7 +621,7 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
 
 
 
-                  // Exercise 116
+                  // Exercise 119
 
                   // Check whether a given integer has an increasing digits sequence.
 
@@ -650,9 +650,38 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
 
 
 
-                      
+
+                // Exercise 125 
+
+                // Belirli bir dizedeki en uzun dizeyi bulma
 
 
+
+                function longest_str_in_array(arra) {
+
+                  var max_str = arra[0].length;
+
+                  var ans = arra[0];
+
+                  for (var i = 1; i< arra.length; i++) {
+
+                    var maxi = arra[i].length;
+
+                    if(maxi > max_str) {
+
+                      ans = arra[i];
+
+                      max_str = maxi;
+                    }
+                  }
+                  
+                      return ans;
+                }
+
+
+                  console.log(longest_str_in_array(["ab","a","abcd"]));
+
+                  console.log(longest_str_in_array(["ab","ab","ab"]));
 
 
 
