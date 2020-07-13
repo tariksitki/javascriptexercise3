@@ -724,6 +724,26 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
                   console.log(mirror_bits(56));
                   console.log(mirror_bits(234));
 
+
+
+
+
+
+                  //  Exercise 128
+
+                  function nearest_round_number(num) {
+                    while (num % 10) {
+                        num++;
+                    }
+                    return num;
+                }
+                
+                console.log(nearest_round_number(56));
+                console.log(nearest_round_number(592));
+
+                
+
+
                         
 
 
