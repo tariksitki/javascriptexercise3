@@ -840,6 +840,26 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
               console.log(prime_factors(105));
 
 
+
+
+
+              // Exercise 133  
+
+
+
+
+              function proper_improper_test(num) {
+                return Math.abs(num[0] / num[1]) < 1
+                  ? "Proper fraction."
+                  : "Improper fraction.";
+              }
+              console.log(proper_improper_test([12, 300]));
+              console.log(proper_improper_test([2, 4]));
+              console.log(proper_improper_test([103, 3]));
+              console.log(proper_improper_test([104, 2]));
+              console.log(proper_improper_test([5, 40]));
+
+
                         
 
 
