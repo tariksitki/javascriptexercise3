@@ -904,7 +904,20 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
               console.log(remove_duplicate_cchars("abcabc"));
               console.log(remove_duplicate_cchars("1365451"));
 
-              
+
+
+
+
+
+              // Exercise 136
+
+              function replace_first_digit(input_str) {
+
+                return input_str.replace(/[0-9]/, '$');
+              }
+              console.log(replace_first_digit("abc1dabc"));
+              console.log(replace_first_digit("p3ython"));
+              console.log(replace_first_digit("ab1cabc")); 
 
                         
 
