@@ -1005,6 +1005,29 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
                 console.log(test_same_digit(1234));
                 console.log(test_same_digit(1111));
                 console.log(test_same_digit(22222222));
+
+
+
+
+
+                // Exercise 141
+
+
+                function test_same_elements_both_arrays(arra1, arra2) {
+                  var result = 0;
+                  for(var i = 0; i < arra1.length; i++) {
+                    for(var j = 0; j < arra2.length; j++){
+                      if(arra1[i] === arra2[j])
+                      {
+                        result++;
+                      }
+                    }
+                  }
+                  return result;
+                }
+                console.log(test_same_elements_both_arrays([1,2,3,4], [1,2,3,4]));
+                console.log(test_same_elements_both_arrays([1,2,3,4], [1,2,3,5]));
+                console.log(test_same_elements_both_arrays([1,2,3,4], [11,22,33,44]));
               
 
 
