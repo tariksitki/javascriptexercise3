@@ -1130,5 +1130,24 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
                 }
                 console.log(sumn(11))
                 console.log(sumn(15))
+
+
+
+
+                // Exercise 146 
+
+
+
+                function sum_Of_Cubes(n) {
+                  var sumn = 0;
+                
+                  for (var i = 1; i <= n; i++) {
+                    sumn += Math.pow(i, 3);
+                  }
+                  return sumn;
+                }
+                
+                console.log(sum_Of_Cubes(3));
+                console.log(sum_Of_Cubes(4));
                     
 
