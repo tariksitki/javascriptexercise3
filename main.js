@@ -1111,5 +1111,24 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
                 var url_add = "https://www.w3resource.com/javascript-exercises/"
                 console.log("Original address: "+url_add)
                 console.log(break_address(url_add))
+
+
+
+
+
+                // Exercise 145
+
+
+
+                function sumn(val) {
+                  var sn = 0;
+                  var i = 0;
+                  while (sn <= val) {
+                    sn += i++;
+                  }
+                  return i - 2;
+                }
+                console.log(sumn(11))
+                console.log(sumn(15))
                     
 
