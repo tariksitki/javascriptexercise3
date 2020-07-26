@@ -1213,3 +1213,22 @@ console.log(longest_string(['a', 'aa', 'aaa', 'aaaa' ]));
                 
                 console.log(halv_array_swap([1,2,3,4,5,6]))
                 console.log(halv_array_swap([1,2,3,4,5,6,7]))
+
+
+
+
+
+                // Exercise 149
+
+
+                function change_case(txt) {
+                  var str1 = "";
+                  for (var i = 0; i < txt.length; i++) {
+                      if (/[A-Z]/.test(txt[i])) str1 += txt[i].toLowerCase();
+                      else str1 += txt[i].toUpperCase();
+                  }
+                  return str1;
+              }
+              
+              console.log(change_case("w3resource"));
+              console.log(change_case("Germany"));
